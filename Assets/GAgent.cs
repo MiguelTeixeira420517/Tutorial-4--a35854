@@ -8,7 +8,7 @@ public class SubGoal
     public Dictionary<string, int> sgoals;
     public bool remove;
 
-    public subGoal(string s, int i, bool r)
+    public SubGoal(string s, int i, bool r)
     {
         sgoals = new Dictionary<string, int>();
         sgoals.Add(s, i);
@@ -24,7 +24,7 @@ public class GAgent : MonoBehaviour
     GPlanner planner;
     Queue<GAction> actionQueue;
     public GAction currentAcction;
-    subGoal currentGoal;
+    SubGoal currentGoal;
     
     // Start is called before the first frame update
     void Start()
