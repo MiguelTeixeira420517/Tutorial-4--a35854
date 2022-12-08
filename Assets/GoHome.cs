@@ -11,7 +11,6 @@ public class GoHome : GAction
 
       public override bool PostPerform()
    {
-		   Destroy(this.gameObject);
-           return true;
+		  return true;
    }
 }
